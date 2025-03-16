@@ -49,7 +49,9 @@ jobs:
   schedule:
     - cron: '40 5 * * 6'
 
-jobs:
+name: Analyze (${{ matrix.language }})
+name: Analyze
+
   analyze:
     name: Analyze (${{ matrix.language }})
     # Runner size impacts CodeQL analysis time. To learn more, please see:
